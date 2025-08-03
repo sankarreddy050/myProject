@@ -1,0 +1,220 @@
+
+
+
+git remote set-url origin https://github.com/sankarreddy050/myProject.git
+
+
+
+Perfect — I’ll be your Git trainer from scratch, no tutorials needed. We’ll start **step by step**, assuming you know absolutely nothing about Git. I’ll teach using **real-life examples**, clear explanations, and hands-on tasks.
+
+---
+
+## 🔰 DAY 1: What Is Git? Why Do Developers Use It?
+
+### 🧠 Imagine This…
+
+You’re writing a document called `project.txt`.
+
+* In the morning, you write Version 1.
+* In the afternoon, you change it — but what if you want the old version back?
+* Now imagine 3 people working on the same file — chaos!
+  **That’s where Git helps.**
+
+---
+
+## 💡 What Is Git?
+
+Git is a **tool that tracks changes to your files**, lets you **go back in time**, and **collaborate safely** with others.
+
+It creates **snapshots of your project** (called "commits") so you never lose anything.
+
+---
+
+## 🔧 How Git Works (Real Example)
+
+You have this folder:
+
+```
+my-app/
+  └── index.html
+```
+
+You run Git commands inside this folder. Git will:
+
+* Track changes to files
+* Let you save each version with a message
+* Help you go back to older versions
+
+---
+
+## 💻 Let’s Do It Step by Step
+
+You’ll do this directly in your computer terminal. If you’re on Windows, use Git Bash or Terminal on macOS/Linux.
+
+---
+
+### ✅ Step 1: Install Git
+
+If not installed:
+👉 [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+---
+
+### ✅ Step 2: Configure Git (Only once)
+
+Open terminal and run:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+📌 This sets your identity. Every time you save changes, Git knows it’s you.
+
+---
+
+### ✅ Step 3: Create a Git Project (called a repo)
+
+Let’s say you’re building a portfolio site:
+
+```bash
+mkdir my-portfolio
+cd my-portfolio
+git init
+```
+
+* `mkdir`: makes a folder
+* `cd`: enters that folder
+* `git init`: creates a **Git repository**
+  You’ll see:
+
+```
+Initialized empty Git repository in ...
+```
+
+Now Git is watching this folder.
+
+---
+
+### ✅ Step 4: Add a File
+
+Create a file:
+
+```bash
+echo "Hello, world!" > index.html
+```
+
+Now check what changed:
+
+```bash
+git status
+```
+
+You’ll see:
+
+```
+Untracked file: index.html
+```
+
+🔴 Git sees the file but is NOT tracking it yet.
+
+---
+
+### ✅ Step 5: Track and Save Your File
+
+To track the file:
+
+```bash
+git add index.html
+```
+
+To save a snapshot (commit):
+
+```bash
+git commit -m "Add homepage"
+```
+
+✅ Now your project has its **first saved version**.
+
+---
+
+## 🔁 Everyday Workflow
+
+Whenever you make a change, you follow this cycle:
+
+```bash
+git status              # See what changed
+git add file.txt        # Mark file to save
+git commit -m "message" # Save with a label
+```
+
+You can repeat this as many times as needed.
+
+---
+
+## 🧪 Real-Life Exercise (Do This Now)
+
+1. Open terminal
+2. Run:
+
+```bash
+mkdir git-practice
+cd git-practice
+git init
+echo "My Git Journey Begins" > notes.txt
+git status
+git add notes.txt
+git commit -m "First commit: create notes file"
+```
+
+3. Now open `notes.txt` and change the text to:
+
+```
+My Git Journey Begins Today!
+```
+
+4. Run:
+
+```bash
+git status
+git add notes.txt
+git commit -m "Updated message in notes"
+```
+
+Now you’ve saved **two versions**.
+
+---
+
+### ✅ Check the History
+
+Run:
+
+```bash
+git log
+```
+
+You’ll see both commits.
+
+---
+
+## 🔁 Recap: Today You Learned
+
+✅ What Git is
+✅ How to set it up
+✅ How to track changes
+✅ How to commit changes
+✅ How to view commit history
+
+---
+
+Tomorrow:
+
+> I’ll teach you how to go back in time, undo changes, and work with branches.
+
+---
+
+Do you want me to continue with **Day 2 now**, or do you want to **practice this first**?
+
+
+=================================
+
